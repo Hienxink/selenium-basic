@@ -9,17 +9,22 @@ public class Seleniumtest {
         String title = driver.getTitle();
         System.out.println(title);
 
-        WebElement sachtuduy_kynangsong = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/header/div[1]/div/div[1]/div[2]/div/button"));
+        WebElement sachtuduy_kynangsong = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/header/div[1]/div/"
+                +"div[1]/div[2]/div/button"));
         sachtuduy_kynangsong.click();
 
-        WebElement imgBook = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/main/div/div[3]/div/div[1]/div[2]/div/a/div[1]/img"));
+        WebElement imgBook = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/main/div/div[3]/div/div[1]/div[2]"
+                +"/div/a/div[1]/img"));
         imgBook.click();
 
-        WebElement soluong = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/main/div[3]/div[1]/div[3]/div[2]/div[1]/div[4]/div[1]/div/div/button[2]/img"));
+
+        WebElement soluong = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/main/div[3]/div[1]/div[3]/div[2]"
+                +"/div[1]/div[4]/div[1]/div/div/button[2]/img"));
         soluong.click();
         soluong.click();
 
-        WebElement xemShop = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/main/div[3]/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]/div[3]/a/span"));
+        WebElement xemShop = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/main/div[3]/div[1]/div[3]/div[2]"
+                +"/div[2]/div[1]/div[1]/div[3]/a/span"));
         xemShop.click();
 
         WebElement theoDoi = driver.findElement(By.xpath("//*[@id=\"seller-info-wrapper\"]/div[3]/button"));
